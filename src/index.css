@@ -27,3 +27,442 @@ ol,ul,dl{
    fill: currentColor;
    overflow: hidden;
 }
+
+/* aside */
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 552px;
+    bottom: 0;
+    z-index: 0;
+    width: 40%;
+    height: 100%;
+    padding: 75px 85px 50px;
+    background: #fafafa;
+}
+
+header {
+    position: absolute;
+    left: 85px;
+    right: 0px;
+    bottom: 15%;
+    width: 65%;
+}
+
+header .name {
+    font-family: 'Museosans 900', sans-serif;
+    color: #4a4a4a;
+}
+
+.name p {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+    margin-top: 0
+}
+
+.name p:nth-of-type(2) {
+    font-weight: 100;
+}
+
+.name .myintro {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+}
+
+header .social {
+    height: 30px;
+    margin-top: 45px;
+    margin-bottom: 65px;
+    line-height: 30px;
+}
+
+header .social a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header .social svg {
+    width: 30px;
+    height: 30px;
+    fill: #a2a2a2;
+}
+
+header .social svg:hover {
+    fill: #333;
+} 
+
+.contact-me {
+    display: inline-block;
+    padding: 15px 65px;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+    background: #3b80fe;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contact-me:hover {
+    background: #1660e7;
+    box-shadow: 0 16px 32px -6px rgba(0, 0, 0, .2);
+}
+
+
+/* project-information */
+
+.project-information .title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.project-information p {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.project-information p span {
+    font-weight: normal;
+}
+
+.code-icon {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.code-icon svg {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+}
+
+
+/* section */
+
+section {
+    overflow: visible;
+    width: 60%;
+    max-width: 1200px;
+    margin-left: 40%;
+    background: #7F8C8D;
+}
+
+.projects > li {
+    position: relative;
+    width: 100%;
+    padding: 65px 45px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.project-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img-wrapper img {
+    margin-top: 2.6vw;
+}
+
+.todo-list {
+    background-image: linear-gradient(180deg, #005ba9, #005ba9);
+}
+
+.todo-list img {
+    width: 70%;
+}
+
+.douban-creeper {
+    background-image: linear-gradient(180deg, #b4ddbf, #b4ddbf);
+}
+
+.douban-creeper img {
+    width: 70%;
+}
+
+.qq-music {
+    padding: 45px 65px;
+    background-color: #1abc9c;
+}
+
+.qq-music img {
+    width: 32%;
+}
+
+.games {
+    width: 100%;
+    padding: 45px 65px;
+    background-image: linear-gradient(180deg, #54e7c7, #54e7c7);
+}
+
+.games img {
+    width: 70%;
+}
+
+.ai-robot {
+    width: 100%;
+    padding: 45px 65px;
+    background: #009ee2;
+}
+
+.ai-robot img {
+    width: 70%;
+
+}
+
+
+/* summary */
+
+.summary {
+    padding: 65px;
+    background: #f4f3f3;
+}
+
+.summary h3 {
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+
+/* skill */
+
+.skill-item li {
+    padding: 20px 0 0 0;
+    list-style: circle;
+}
+
+.skill-item li p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.skill-item li p>span {
+    background: rgba(0, 0, 0, .1);
+    /* font-weight: 100; */
+    padding: 0 .2vw;
+}
+
+.skill::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(180deg, rgba(74, 74, 74, .08), rgba(74, 74, 74, .08));
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* contact */
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 1vw;
+}
+
+.contact-item {
+    flex-grow: 1;
+    border-left: 1px solid rgba(74, 74, 74, .6);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.contact-item>li {
+     /* margin-bottom: 1vw;  */
+}
+
+.contact-item>li p {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-item>li p span {
+    padding-left: 0.5vw;
+}
+
+.contact-item>li p svg.icon {
+    fill: rgba(0, 0, 0, .5);
+}
+
+.wechat {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.wechat>img {
+    width: 10vw;
+    margin-right: 1vw;
+}
+
+
+/* footer */
+
+.footer {
+    height: 80px;
+    padding: 32px 65px 25px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    font-family: 'Museosans 100', sans-serif;
+}
+
+
+/* media */
+
+@media (max-width:991px) {
+    section {
+        width: 100%;
+        margin-left: 0%;
+    }
+    aside {
+        position: static;
+        width: 100%;
+        min-height: 100vh;
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+    header {
+        position: absolute;
+        left: 16vw;
+        right: 0px;
+        top: 7%;
+        width: 71vw;
+    }
+    .name p {
+        font-size: 13.3vw;
+        line-height: 16vw;
+    }
+    header .myintro {
+        margin-top: 6.67vw;
+        margin-bottom: 2.67vw;
+        font-size: 4.8vw;
+        line-height: 6.93vw;
+    }
+    header .social {
+        height: 8vw;
+        margin-top: 12vw;
+        margin-bottom: 17.3vw;
+        line-height: 8vw;
+    }
+    .contact-me {
+        padding: 4vw 17.3vw;
+    }
+    /* project */
+    .project>li {
+        padding: 8vw 6.4vw 14.9vw 6.4vw;
+    }
+    .project-information .title {
+        font-size: 6.4vw;
+    }
+    .project-information p {
+        margin-top: 2.13vw;
+        font-size: 4.8vw;
+        font-weight: normal;
+    }
+    .project-information p span {
+        font-weight: bold;
+    }
+    .qq-music img,.todo-list img,.douban-creeper img,.react-gallery img{
+        width: 80vw;
+    }
+    .summary {
+        padding: 12vw 6.4vw;
+    }
+    .skill-item li {
+        list-style: none;
+        padding: 3.2vw 0 3.2vw 0;
+        border-bottom: 3px solid rgba(74, 74, 74, .08);
+    }
+    .skill-item li p {
+        font-size: 4.8vw;
+        line-height: 8vw;
+    }
+    .skill-item li:last-of-type {
+        border: none;
+    }
+    .skill::after {
+        height: 0;
+    }
+    .contact-wrapper {
+        flex-direction: row;
+        margin-top: 2.6vw;
+    }
+    .contact-item {
+        border-left: none;
+    }
+    .contact-item>li p {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1.67vw;
+        padding-bottom: 1.67vw;
+        border-left: none;
+        /* border-bottom: 1px solid rgba(74, 74, 74, .6); */
+        font-size: 5.3vw;
+    }
+    .contact-item>li p span {
+        margin-right: 2.67vw;
+        font-weight: 100;
+    }
+    .wechat {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .wechat>img {
+        width: 30vw;
+        margin-right: 4vw;
+    }
+    .footer {
+        /* height: 80px; */
+        padding: 6.67vw 13.3vw;
+    }
+    .footer p {
+        font-size: 3.73vw;
+    }
+}
+
+
+/* animation */
+/* 
+.left-in-init {
+    opacity: 0;
+    transform: translate(-25px, 0px);
+}
+
+.bottom-in-init {
+    opacity: 0;
+    transform: translate(0px, 65px);
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px) translateZ(0px);
+    transition: opacity 800ms, transform 800ms;
+} */

@@ -1,45 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="src/index.css">
+  <link rel="stylesheet" href="./src/index.css">
   <title>方佩的简历</title>
   <script src="src/iconfont.js"></script>
 </head>
-
 <body>
   <main>
     <aside>
-      <nav>
-        <a href="mailto:fangpei9212@163.com">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-mail"></use>
-          </svg>
-        </a>
-        <a href="https:pegggy.github.io">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-boke"></use>
-          </svg>
-        </a>
-        <a href="github.com/Pegggy">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-github"></use>
-          </svg>
-        </a>
-        <a href="">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-pdf"></use>
-          </svg>
-        </a>
-      </nav>
       <div class="avator">
         <img src="" alt="">
       </div>
       <header>
-        <h1 class="name">
+        <h1 class="name  left-in-init">
           <p>方佩</p>
           <p>职位意向</p>
           <p>前端开发</p>
@@ -47,6 +23,29 @@
         <div class="myintro">
           <p>良好的自学能力、强大的自控能力和独立思考的能力，利用网络资源扩展自身能力，持续学习新技术。</p>
         </div>
+        <div class="social left-in-init">
+          <a href="mailto:fangpei9212@163.com">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </a>
+          <a href="https:pegggy.github.io">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-boke"></use>
+            </svg>
+          </a>
+          <a href="github.com/Pegggy">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github"></use>
+            </svg>
+          </a>
+          <a href="">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-pdf"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="contact-me left-in-init" href="#contact">联系方式</a>
       </header>
     </aside>
     <section>
@@ -60,16 +59,15 @@
             <h4 class="title">QQ Music</h4>
             <ul>
               <li class="project-intro no-dotted">QQ 音乐移动端单页应用页面，包括推荐页、排行榜页以及搜索页的实现，在搜索音乐后点击单曲进行播放。</li>
-              <li class="project-intro">整个项目采用原生 JS 实现，采用 ES6 语法</li>
-              <li class="project-intro">CSS 方面首次尝试 SCSS 样式</li>
+              <li class="project-intro">整个项目采用原生 JS 实现，采用 ES6/7 语法，CSS 方面使用 SCSS</li>
               <li class="project-intro">采用组件化的思想实现: Tab组件、轮播组件、播放器组件、歌词组件、进度条组件、搜索组件</li>
               <li class="project-intro">数据通过伪造请求从官网抓取，实现与官网同步，通过 express 将数据传到前端进行展示</li>
             </ul>
             <p class="deploy">
-              <span>部署：</span> Express + Nodejs
+              <span>部署：</span> Express + Nodejs + Request
             </p>
             <p class="technology-stack">
-              <span>技术栈：</span> ES6 + webpack + SCSS + Express + Nodejs
+              <span>技术栈：</span> ES6 + Webpack + SCSS + Express + Nodejs
             </p>
           </div>
           <div class="code-icon">
@@ -86,26 +84,27 @@
             <img class="bottom-in-init" src="" alt="2">
           </div>
           <div class="project-information">
-            <h4 class="title">React Todo List</h4>
+            <h4 class="title">React TodoList</h4>
             <ul>
-              <li class="project-intro no-dotted">Todo List 待办事项单页应用页面，包括待办事项增加、删除，用户注册、登录、找回密码等功能</li>
-              <li class="project-intro"></li>
+              <li class="project-intro no-dotted">基于 React + Redux 的待办事项管理应用，支持登录、注册、找回密码以及云同步。</li>
+              <li class="project-intro">通过 LeanCloud 实现用户操作以及 todo 事项数据云存储</li>
+              <li class="project-intro">添加待办事项、删除待办事项标记为已完成</li>
             </ul>
-            
+
             <p class="deploy">
               <span>部署：</span> LeanCloud
             </p>
             <p class="technology-stack">
-              <span>技术栈：</span> React + webpack 
+              <span>技术栈：</span> React + Redux + ES6 + Webpack
             </p>
           </div>
           <div class="code-icon">
-            <a href="https://incuisting.github.io/resumer-maker/dist/">
+            <a href="https://pegggy.github.io/todo-react/dist/index.html">
               <svg class="icon">
                 <use xlink:href="#icon-eye"></use>
               </svg>
             </a>
-            <a href="https://github.com/incuisting/resumer-maker">
+            <a href="https://github.com/Pegggy/todo-react">
               <svg class="icon">
                 <use xlink:href="#icon-github"></use>
               </svg>
@@ -128,7 +127,7 @@
               <span>部署：</span> Express + Nodejs
             </p>
             <p class="technology-stack">
-              <span>技术栈：</span> React + webpack + jQuery + Cheerio + Nodejs + Express
+              <span>技术栈：</span> React + Webpack + jQuery + Cheerio + Nodejs + Express
             </p>
           </div>
           <div class="code-icon">
@@ -154,14 +153,14 @@
               <li class="project-intro">使用less-loader、style-loader、url-loader等工具自动编译 less文件、图片以及 iconfont 文件</li>
             </ul>
             <p class="technology-stack">
-              <span>技术栈：</span> React + webpack + ES6 + CSS3 + less
+              <span>技术栈：</span> React + Webpack + ES6 + CSS3 + less
             </p>
           </div>
           <div class="code-icon">
             <a href="https://pegggy.github.io/gallery/dist/index.html">
-                <svg class="icon">
-                    <use xlink:href="#icon-eye"></use>
-                </svg>
+              <svg class="icon">
+                <use xlink:href="#icon-eye"></use>
+              </svg>
             </a>
             <a href="https://github.com/Pegggy/gallery">
               <svg class="icon">
@@ -170,8 +169,65 @@
             </a>
           </div>
         </li>
-        <li class="">
-
+        <li class="games">
+          <div class="project-number">005</div>
+          <div class="project-img-wrapper">
+            <img class="bottom-in-init" src="" alt="5">
+          </div>
+          <div class="project-information">
+            <h4 class="title">贪食蛇</h4>
+            <ul>
+              <li class="project-intro no-dotted">这是由原生 JS 写的经典小游戏贪食蛇。</li>
+              <li class="project-intro">进入后立即开始，方向键控制上下左右，碰到四壁时结束游戏,每吃到一颗🍎时，蛇的长度随之增加，左上角显示吃掉的🍎数量。动画效果采用 canvas 实现。</li>
+            </ul>
+          </div>
+          <div class="code-icon">
+            <a href="https://pegggy.github.io/Snake/snake.html">
+              <svg class="icon">
+                <use xlink:href="#icon-eye"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="games">
+          <div class="project-number">006</div>
+          <div class="project-img-wrapper">
+            <img class="bottom-in-init" src="" alt="6">
+          </div>
+          <div class="project-information">
+            <h4 class="title">tic-tac-toe 井字棋游戏</h4>
+            <ul>
+              <li class="project-intro no-dotted">这是由 React 写的井字棋游戏。</li>
+              <li class="project-intro">任何方向三子连成一线即为获胜，能记录历史，实现悔棋效果。</li>
+            </ul>
+          </div>
+          <div class="code-icon">
+            <a href="https://pegggy.github.io/tictactoe/build/index.html">
+              <svg class="icon">
+                <use xlink:href="#icon-eye"></use>
+              </svg>
+            </a>
+          </div>
+        </li>
+         <li class="games">
+          <div class="project-number">007</div>
+          <div class="project-img-wrapper">
+            <img class="bottom-in-init" src="" alt="7">
+          </div>
+          <div class="project-information">
+            <h4 class="title">计算器</h4>
+            <ul>
+              <li class="project-intro no-dotted">原生 JS 实现计算器功能</li>
+              <li class="project-intro">Ans 记录上次计算结果，AC 清除所有记录，CE 删除最后一位数字。</li>
+            </ul>
+          </div>
+          <div class="code-icon">
+            <a href="https://pegggy.github.io/FreeCodeCamp/calculator.html">
+              <svg class="icon">
+                <use xlink:href="#icon-eye"></use>
+              </svg>
+            </a>
+          </div>
         </li>
       </ul>
     </section>
