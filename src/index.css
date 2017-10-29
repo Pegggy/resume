@@ -124,7 +124,7 @@ header .social svg:hover {
     font-size: 24px;
 }
 
-.project-information p {
+.project-intro{
     margin-top: 8px;
     font-size: 18px;
     font-weight: normal;
@@ -329,7 +329,8 @@ section {
 .footer p {
     text-align: center;
     font-size: 14px;
-    color: #999;
+    font-weight: 100;
+    color: #f4f3f3;
     font-family: 'Museosans 100', sans-serif;
 }
 
